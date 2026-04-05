@@ -1,12 +1,15 @@
 [
     {
         "name": "James R. Jacobs",
-        "affiliation": "Free Government Information (FGI)",
-        "date": "2026-03-12"
+        "affiliation": "Free Government Information (FGI)"
     },
     {
         "name": "Jim Jacobs",
-        "affiliation": "Free Government Information (FGI)",
-        "date": "2026-03-12"
+        "affiliation": "Free Government Information (FGI)"
     }
+
+    {
+  "name": "Shinjoung Yeo",
+  "affiliation": "Information Observatory"
+}
 ]
