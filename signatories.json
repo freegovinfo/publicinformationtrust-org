@@ -1,15 +1,35 @@
 [
-    {
-        "name": "James R. Jacobs",
-        "affiliation": "Free Government Information (FGI)"
-    },
-    {
-        "name": "Jim Jacobs",
-        "affiliation": "Free Government Information (FGI)"
-    },
+{
+    "name": "James R. Jacobs",
+    "affiliation": "Free Government Information (FGI)"
+},
+{
+    "name": "Jim Jacobs",
+    "affiliation": "Free Government Information (FGI)"
+},
 
-    {
-        "name": "Shinjoung Yeo",
-        "affiliation": "Information Observatory"
-    }
+{
+    "name": "Shinjoung Yeo",
+    "affiliation": "Information Observatory"
+},
+
+{
+  "name": "Rick Skrenta",
+  "affiliation": "Common Crawl Foundation"
+},
+
+{
+  "name": "Christopher Steven Marcum",
+  "affiliation": "Open Science Advocate"
+},
+
+{
+  "name": "Danielle Gensch",
+  "affiliation": "Government Information Librarian"
+},
+
+{
+  "affiliation": "Data Rescue Project"
+}
+    
 ]
