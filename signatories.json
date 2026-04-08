@@ -93,11 +93,50 @@
   "name": "Lynda Kellam"
 },
 
-    {
+{
   "type": "individual",
   "name": "Steve Beleu"
-}
+},
 
+{
+  "type": "individual",
+  "name": "Snowden Becker"
+},
+
+{
+  "type": "individual",
+  "name": "Daniel Schiller"
+},
+
+{
+  "type": "individual",
+  "name": "Kathleen Burlingame"
+},
+
+{
+  "type": "individual",
+  "name": "ben amata"
+},
+
+{
+  "type": "individual",
+  "name": "Laura Hjerpe"
+},
+
+{
+  "type": "individual",
+  "name": "Jian Wu"
+},
+
+{
+  "type": "individual",
+  "name": "Beth Jarosz"
+},
+
+{
+  "name": "Deborah Doyle, President",
+  "affiliation": "CA Public Library Advocates"
+}
     
     
 ]
