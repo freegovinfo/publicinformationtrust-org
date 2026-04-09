@@ -5,22 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preservation of Government Information: An Information Stewardship Call to Action</title>
     <meta name="description" content="Endorse the call to action to preserve U.S. government information. For libraries, archives, and information professionals.">
-    <!-- Load Inter as a solid Neo-Grotesque to mimic Helvetica's clean, neutral lines -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        /* 
-           International Typographic Style (Swiss Style) x FreeGovInfo
-           Principles: Objective, Functional, Grid-based, Asymmetrical, High Typographic Hierarchy
-        */
-
         :root {
-            /* FGI Heritage Colors */
             --fgi-blue: #3e6487;
-            --fgi-blue-dark: #2c4a66;
-            
-            /* Swiss Style Palette */
             --black: #000000;
             --dark-gray: #1a1a1a;
             --medium-gray: #757575;
@@ -28,15 +18,10 @@
             --white: #ffffff;
             --alert: #e02424;
             --success: #0e9f6e;
-
-            /* Typography */
             --font-stack: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             --base-font-size: 16px;
-            --modular-scale: 1.25;
             --line-height-base: 1.4;
             --line-height-heading: 1.1;
-
-            /* Spacing */
             --grid-gap: 2rem;
             --spacing-unit: 1.5rem;
         }
@@ -58,7 +43,6 @@
             overflow-x: hidden;
         }
 
-        /* ── Typography Framework ── */
         h1, h2, h3, h4 {
             color: var(--black);
             font-weight: 900;
@@ -67,20 +51,19 @@
             margin-bottom: 0.5em;
             text-transform: none;
         }
-        
+
         h1 {
             font-size: clamp(3rem, 6vw, 5rem);
             margin-bottom: 0;
-            /* Very tight tracking on massive headings */
-            letter-spacing: -0.04em; 
+            letter-spacing: -0.04em;
         }
 
         h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
         h3 { font-size: 1.5rem; }
-        
+
         p {
             margin-bottom: 1em;
-            max-width: 65ch; /* Optimal reading measure */
+            max-width: 65ch;
         }
 
         .meta-text {
@@ -107,7 +90,6 @@
             text-decoration-color: var(--black);
         }
 
-        /* ── Layout & Grid ── */
         .fgi-header {
             background-color: var(--fgi-blue);
             color: var(--white);
@@ -122,7 +104,7 @@
             color: var(--white);
             text-decoration: none;
         }
-        
+
         .fgi-logo-placeholder {
             font-weight: 900;
             font-size: 2.5rem;
@@ -157,7 +139,6 @@
             gap: var(--grid-gap);
         }
 
-        /* Title Area spanning full width or massive columns */
         .hero {
             grid-column: 1 / -1;
             margin-bottom: 2rem;
@@ -165,7 +146,6 @@
             padding-bottom: 3rem;
         }
 
-        /* Main asymmetric 12-column grid layout */
         .col-main {
             grid-column: 1 / -1;
         }
@@ -183,18 +163,12 @@
             .col-side { grid-column: 8 / 13; }
         }
 
-        /* ── Strict Geometric UI Elements ── */
         hr {
             border: none;
             border-top: 2px solid var(--black);
             margin: 4rem 0;
         }
 
-        .thick-rule {
-            border-top: 8px solid var(--black);
-        }
-
-        /* Document Embed Container */
         .document-container {
             width: 100%;
             height: 850px;
@@ -203,7 +177,7 @@
             margin-top: 3rem;
             padding: 2rem;
         }
-        
+
         .document-container iframe {
             width: 100%;
             height: 100%;
@@ -211,12 +185,11 @@
             display: block;
         }
 
-        /* Step List */
         .step-list {
             list-style: none;
             margin: 2rem 0;
         }
-        
+
         .step {
             display: flex;
             gap: 1.5rem;
@@ -225,25 +198,24 @@
             border-top: 2px solid var(--medium-gray);
             padding-top: 1.5rem;
         }
-        
+
         .step-num {
             font-size: 1.5rem;
             font-weight: 900;
             color: var(--fgi-blue);
         }
-        
+
         .step h3 {
             font-size: 1.25rem;
             margin-bottom: 0.25rem;
         }
-        
+
         .step p {
             margin: 0;
             color: var(--medium-gray);
             font-size: 0.95rem;
         }
 
-        /* Forms */
         .swiss-form {
             display: flex;
             flex-direction: column;
@@ -275,7 +247,7 @@
             font-family: var(--font-stack);
             font-size: 1rem;
             color: var(--black);
-            border-radius: 0; /* Strict no rounded corners */
+            border-radius: 0;
             transition: outline 0.1s, border-color 0.1s;
         }
 
@@ -288,7 +260,40 @@
             border-color: var(--fgi-blue);
         }
 
-        /* Buttons */
+        .form-help {
+            margin-top: 0.5rem;
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .checkbox-group {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 0.25rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+
+        .checkbox-group label {
+            text-transform: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            letter-spacing: 0;
+            margin-bottom: 0;
+        }
+
+        #organization-fields[hidden] {
+            display: none;
+        }
+
         .btn {
             display: inline-block;
             background-color: var(--black);
@@ -303,7 +308,7 @@
             cursor: pointer;
             text-decoration: none;
             text-align: center;
-            border-radius: 0; /* Strict no rounded corners */
+            border-radius: 0;
             transition: background-color 0.15s, color 0.15s;
         }
 
@@ -318,7 +323,6 @@
             cursor: not-allowed;
         }
 
-        /* Status Messages */
         .form-msg {
             display: none;
             padding: 1.5rem;
@@ -326,11 +330,11 @@
             border: 4px solid;
             margin-bottom: 1.5rem;
         }
+
         .form-msg.visible { display: block; }
         .form-msg.success { border-color: var(--success); color: var(--success); }
         .form-msg.error { border-color: var(--alert); color: var(--alert); }
 
-        /* Signatories Data Grid */
         .signatories-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -363,7 +367,6 @@
             font-weight: 700;
         }
 
-        /* Footer */
         .site-footer {
             background-color: var(--black);
             color: var(--white);
@@ -375,16 +378,14 @@
             color: var(--white);
             text-decoration-color: var(--fgi-blue);
         }
-        
+
         .site-footer a:hover {
             color: var(--fgi-blue);
         }
-
     </style>
 </head>
 <body>
 
-    <!-- FGI Branding Header -->
     <header class="fgi-header">
         <a href="https://freegovinfo.info" target="_blank" rel="noopener">
             <div class="fgi-logo-placeholder">FGI</div>
@@ -396,8 +397,7 @@
     </header>
 
     <div class="container">
-        
-        <!-- Hero Section -->
+
         <div class="hero">
             <span class="meta-text">March 12, 2026</span>
             <h1>Preservation of<br>Government Information</h1>
@@ -406,7 +406,6 @@
             </p>
         </div>
 
-        <!-- Left Column: The Statement / Document -->
         <main class="col-main">
             <h2>The Call to Action</h2>
             <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
@@ -431,17 +430,14 @@
 
             <hr>
 
-            <!-- Signatories Section -->
             <h2 id="signatories">Signatories</h2>
             <p style="margin-bottom: 2rem;">Individuals and organizations standing in solidarity.</p>
-            
+
             <div id="sig-grid" class="signatories-list">
-                <!-- Javascript will populate this from signatories.json -->
                 <p>Loading signatories data...</p>
             </div>
         </main>
 
-        <!-- Right Column: Call to Action & Form -->
         <aside class="col-side">
             <span class="meta-text" style="color: var(--fgi-blue);">Take Action</span>
             <h2 style="font-size: 2.5rem; line-height: 1;">Take Action</h2>
@@ -468,7 +464,7 @@
             <h3>Endorse the Call to Action</h3>
 
             <div id="form-success" class="form-msg success">
-                Submission received. Thank you. Your name will be verified and added to the public record.
+                Submission received. Thank you. Your name will be reviewed and added to the public record.
             </div>
 
             <div id="form-error" class="form-msg error">
@@ -476,7 +472,6 @@
             </div>
 
             <form id="pledge-form" class="swiss-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Web3Forms Access Key: Add yours from web3forms.com -->
                 <input type="hidden" name="access_key" value="d8d0bc56-7ff6-4067-a38c-c60f5e71e754">
                 <input type="hidden" name="subject" value="New endorsement: Preservation of Government Information Call to Action">
                 <input type="hidden" name="from_name" value="Information Stewardship Call to Action">
@@ -485,7 +480,7 @@
                 <div class="form-group">
                     <label for="signing_as">Signing as</label>
                     <select id="signing_as" name="signing_as" required style="cursor: pointer;">
-                        <option value="individual">Individual</option>
+                        <option value="individual" selected>Individual</option>
                         <option value="organization">Organization</option>
                     </select>
                 </div>
@@ -501,18 +496,38 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="organization_name">Organization name</label>
-                    <input type="text" id="organization_name" name="organization_name">
+                    <label for="affiliation_or_title">Affiliation or title (optional)</label>
+                    <input type="text" id="affiliation_or_title" name="affiliation_or_title">
+                    <div class="form-help">
+                        Examples: Internet Archive, Government Information Librarian, Open Science Advocate
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="title_or_role">Title / role</label>
-                    <input type="text" id="title_or_role" name="title_or_role">
+                <div id="organization-fields" hidden>
+                    <div class="form-group">
+                        <label for="organization_name">Organization name</label>
+                        <input type="text" id="organization_name" name="organization_name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title_or_role">Your title or role</label>
+                        <input type="text" id="title_or_role" name="title_or_role">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="org_authorized" name="org_authorized" value="yes">
+                        <label for="org_authorized">
+                            I confirm I am authorized to sign on behalf of this organization.
+                        </label>
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label for="public_display_name">Public display name</label>
                     <input type="text" id="public_display_name" name="public_display_name" required>
+                    <div class="form-help" id="public-display-help">
+                        Examples: Antoine McGrath &bull; Antoine McGrath, Internet Archive &bull; Data Rescue Project &bull; Deborah Doyle for California Public Library Advocates
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -520,23 +535,15 @@
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
 
-                <div class="form-group" style="flex-direction: row; align-items: flex-start; gap: 0.75rem;">
-                    <input type="checkbox" id="publication_consent" name="publication_consent" value="yes" required style="margin-top: 0.25rem; width: 1.2rem; height: 1.2rem; cursor: pointer;">
-                    <label for="publication_consent" style="text-transform: none; font-weight: 500; font-size: 0.95rem; cursor: pointer;">
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="publication_consent" name="publication_consent" value="yes" required>
+                    <label for="publication_consent">
                         I agree to have my name and/or organization listed publicly as a signatory.
-                    </label>
-                </div>
-
-                <div class="form-group" style="flex-direction: row; align-items: flex-start; gap: 0.75rem;">
-                    <input type="checkbox" id="org_authorized" name="org_authorized" value="yes" style="margin-top: 0.25rem; width: 1.2rem; height: 1.2rem; cursor: pointer;">
-                    <label for="org_authorized" style="text-transform: none; font-weight: 500; font-size: 0.95rem; cursor: pointer;">
-                        I confirm I am authorized to sign on behalf of this organization.
                     </label>
                 </div>
 
                 <button type="submit" id="submit-btn" class="btn" style="margin-top: 1rem;">Endorse the Call to Action</button>
             </form>
-
         </aside>
 
     </div>
@@ -549,14 +556,68 @@
         </div>
     </footer>
 
-    <!-- Logic -->
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Form Handler
         const form = document.getElementById('pledge-form');
         const successEl = document.getElementById('form-success');
         const errorEl = document.getElementById('form-error');
         const submitBtn = document.getElementById('submit-btn');
+
+        const signingAs = document.getElementById('signing_as');
+        const nameField = document.getElementById('name');
+        const affiliationField = document.getElementById('affiliation_or_title');
+        const orgFields = document.getElementById('organization-fields');
+        const orgName = document.getElementById('organization_name');
+        const orgRole = document.getElementById('title_or_role');
+        const orgAuthorized = document.getElementById('org_authorized');
+        const publicDisplayName = document.getElementById('public_display_name');
+
+        function suggestedDisplayName() {
+            const mode = signingAs.value;
+            const name = nameField.value.trim();
+            const affiliation = affiliationField.value.trim();
+            const organization = orgName.value.trim();
+
+            if (mode === 'organization') {
+                if (organization) return organization;
+                if (name) return name;
+                return '';
+            }
+
+            if (name && affiliation) return `${name}, ${affiliation}`;
+            return name;
+        }
+
+        function updatePublicDisplayPlaceholder() {
+            const suggestion = suggestedDisplayName();
+            publicDisplayName.placeholder = suggestion || 'How should this appear publicly?';
+        }
+
+        function updateFormMode() {
+            const isOrg = signingAs.value === 'organization';
+
+            orgFields.hidden = !isOrg;
+            orgName.required = isOrg;
+            orgRole.required = isOrg;
+            orgAuthorized.required = isOrg;
+
+            if (isOrg) {
+                affiliationField.value = '';
+            } else {
+                orgName.value = '';
+                orgRole.value = '';
+                orgAuthorized.checked = false;
+            }
+
+            updatePublicDisplayPlaceholder();
+        }
+
+        signingAs.addEventListener('change', updateFormMode);
+        nameField.addEventListener('input', updatePublicDisplayPlaceholder);
+        affiliationField.addEventListener('input', updatePublicDisplayPlaceholder);
+        orgName.addEventListener('input', updatePublicDisplayPlaceholder);
+
+        updateFormMode();
 
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
@@ -576,6 +637,7 @@
                 if (result.success) {
                     successEl.classList.add('visible');
                     form.reset();
+                    updateFormMode();
                 } else {
                     errorEl.classList.add('visible');
                 }
@@ -584,11 +646,10 @@
                 errorEl.classList.add('visible');
             } finally {
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Submit Endorsement';
+                submitBtn.textContent = 'Endorse the Call to Action';
             }
         });
 
-        // Signatories Loader
         const sigGrid = document.getElementById('sig-grid');
 
         async function loadSignatories() {
@@ -601,7 +662,7 @@
                     const dateStr = s.date
                         ? new Date(s.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
                         : '';
-                    
+
                     return '<div class="sig-entry">'
                         + '<div class="sig-name">' + escapeHtml(s.name) + '</div>'
                         + (s.affiliation ? '<div class="sig-org">' + escapeHtml(s.affiliation) + '</div>' : '')
