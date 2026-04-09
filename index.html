@@ -11,7 +11,6 @@
     <style>
         :root {
             --fgi-blue: #3e6487;
-            --fgi-blue-dark: #2c4a66;
             --black: #000000;
             --dark-gray: #1a1a1a;
             --medium-gray: #757575;
@@ -261,6 +260,13 @@
             border-color: var(--fgi-blue);
         }
 
+        .form-help {
+            margin-top: 0.5rem;
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
         .checkbox-group {
             flex-direction: row;
             align-items: flex-start;
@@ -458,7 +464,7 @@
             <h3>Endorse the Call to Action</h3>
 
             <div id="form-success" class="form-msg success">
-                Submission received. Thank you. Your name will be verified and added to the public record.
+                Submission received. Thank you. Your name will be reviewed and added to the public record.
             </div>
 
             <div id="form-error" class="form-msg error">
@@ -489,6 +495,14 @@
                     <input type="email" id="email" name="email" required>
                 </div>
 
+                <div class="form-group">
+                    <label for="affiliation_or_title">Affiliation or title (optional)</label>
+                    <input type="text" id="affiliation_or_title" name="affiliation_or_title">
+                    <div class="form-help">
+                        Examples: Internet Archive, Government Information Librarian, Open Science Advocate
+                    </div>
+                </div>
+
                 <div id="organization-fields" hidden>
                     <div class="form-group">
                         <label for="organization_name">Organization name</label>
@@ -496,7 +510,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="title_or_role">Title / role</label>
+                        <label for="title_or_role">Your title or role</label>
                         <input type="text" id="title_or_role" name="title_or_role">
                     </div>
 
@@ -511,6 +525,9 @@
                 <div class="form-group">
                     <label for="public_display_name">Public display name</label>
                     <input type="text" id="public_display_name" name="public_display_name" required>
+                    <div class="form-help" id="public-display-help">
+                        Examples: Antoine McGrath • Antoine McGrath, Internet Archive • Data Rescue Project • Deborah Doyle for California Public Library Advocates
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -547,10 +564,34 @@
         const submitBtn = document.getElementById('submit-btn');
 
         const signingAs = document.getElementById('signing_as');
+        const nameField = document.getElementById('name');
+        const affiliationField = document.getElementById('affiliation_or_title');
         const orgFields = document.getElementById('organization-fields');
         const orgName = document.getElementById('organization_name');
         const orgRole = document.getElementById('title_or_role');
         const orgAuthorized = document.getElementById('org_authorized');
+        const publicDisplayName = document.getElementById('public_display_name');
+
+        function suggestedDisplayName() {
+            const mode = signingAs.value;
+            const name = nameField.value.trim();
+            const affiliation = affiliationField.value.trim();
+            const organization = orgName.value.trim();
+
+            if (mode === 'organization') {
+                if (organization) return organization;
+                if (name) return name;
+                return '';
+            }
+
+            if (name && affiliation) return `${name}, ${affiliation}`;
+            return name;
+        }
+
+        function updatePublicDisplayPlaceholder() {
+            const suggestion = suggestedDisplayName();
+            publicDisplayName.placeholder = suggestion || 'How should this appear publicly?';
+        }
 
         function updateFormMode() {
             const isOrg = signingAs.value === 'organization';
@@ -560,14 +601,22 @@
             orgRole.required = isOrg;
             orgAuthorized.required = isOrg;
 
-            if (!isOrg) {
+            if (isOrg) {
+                affiliationField.value = '';
+            } else {
                 orgName.value = '';
                 orgRole.value = '';
                 orgAuthorized.checked = false;
             }
+
+            updatePublicDisplayPlaceholder();
         }
 
         signingAs.addEventListener('change', updateFormMode);
+        nameField.addEventListener('input', updatePublicDisplayPlaceholder);
+        affiliationField.addEventListener('input', updatePublicDisplayPlaceholder);
+        orgName.addEventListener('input', updatePublicDisplayPlaceholder);
+
         updateFormMode();
 
         form.addEventListener('submit', async function(e) {
