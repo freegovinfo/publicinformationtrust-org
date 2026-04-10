@@ -495,7 +495,7 @@
                     <input type="email" id="email" name="email" required>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" id="individual-affiliation">
                     <label for="affiliation_or_title">Affiliation or title (optional)</label>
                     <input type="text" id="affiliation_or_title" name="affiliation_or_title">
                     <div class="form-help">
@@ -605,6 +605,9 @@
             orgName.required = isOrg;
             orgRole.required = isOrg;
             orgAuthorized.required = isOrg;
+
+            const affiliationGroup = document.getElementById('individual-affiliation');
+            affiliationGroup.hidden = isOrg;
 
             if (isOrg) {
                 affiliationField.value = '';
