@@ -601,6 +601,10 @@
             orgName.required = isOrg;
             orgAuthorized.required = isOrg;
 
+            // Disable org fields for individuals so they are excluded from POST body
+            orgName.disabled = !isOrg;
+            orgAuthorized.disabled = !isOrg;
+
             if (isOrg) {
                 affiliationLabel.textContent = 'Your title or role';
                 affiliationHelp.textContent = 'Examples: Executive Director, Program Manager, President';
