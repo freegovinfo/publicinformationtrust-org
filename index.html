@@ -510,8 +510,9 @@
                     </div>
 
                     <div class="form-group checkbox-group">
-                        <input type="checkbox" id="org_authorized" name="org_authorized" value="yes">
-                        <label for="org_authorized">
+                        <input type="hidden" id="org_authorized" name="org_authorized" value="no">
+                        <input type="checkbox" id="org_authorized_check">
+                        <label for="org_authorized_check">
                             I confirm I am authorized to sign on behalf of this organization.
                         </label>
                     </div>
@@ -565,8 +566,14 @@
         const affiliationHelp = document.getElementById('affiliation-help');
         const orgFields = document.getElementById('organization-fields');
         const orgName = document.getElementById('organization_name');
-        const orgAuthorized = document.getElementById('org_authorized');
+        const orgAuthorized = document.getElementById('org_authorized');         // hidden input
+        const orgAuthorizedCheck = document.getElementById('org_authorized_check'); // visual checkbox
         const publicDisplayName = document.getElementById('public_display_name');
+
+        // Sync visual checkbox to hidden input
+        orgAuthorizedCheck.addEventListener('change', function() {
+            orgAuthorized.value = this.checked ? 'yes' : 'no';
+        });
 
         function suggestedDisplayName() {
             const mode = signingAs.value;
@@ -601,10 +608,6 @@
             orgName.required = isOrg;
             orgAuthorized.required = isOrg;
 
-            // Disable org fields for individuals so they are excluded from POST body
-            orgName.disabled = !isOrg;
-            orgAuthorized.disabled = !isOrg;
-
             if (isOrg) {
                 affiliationLabel.textContent = 'Your title or role';
                 affiliationHelp.textContent = 'Examples: Executive Director, Program Manager, President';
@@ -614,7 +617,8 @@
                 affiliationHelp.textContent = 'Examples: University Librarian, Digital Preservation Specialist, Government Documents Archivist';
                 affiliationField.required = false;
                 orgName.value = '';
-                orgAuthorized.checked = false;
+                orgAuthorized.value = 'no';
+                orgAuthorizedCheck.checked = false;
             }
 
             updatePublicDisplayPlaceholder();
