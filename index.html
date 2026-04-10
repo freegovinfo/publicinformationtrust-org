@@ -664,7 +664,7 @@
                         : '';
 
                     return '<div class="sig-entry">'
-                        + '<div class="sig-name">' + escapeHtml(s.name) + '</div>'
+                        + '<div class="sig-name">' + escapeHtml(s.public_display_name || s.name) + '</div>'
                         + (s.affiliation ? '<div class="sig-org">' + escapeHtml(s.affiliation) + '</div>' : '')
                         + (dateStr ? '<div class="sig-date">' + dateStr + '</div>' : '')
                         + '</div>';
