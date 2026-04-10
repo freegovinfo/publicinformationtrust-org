@@ -495,10 +495,10 @@
                     <input type="email" id="email" name="email" required>
                 </div>
 
-                <div class="form-group" id="individual-affiliation">
-                    <label for="affiliation_or_title">Affiliation or title (optional)</label>
+                <div class="form-group">
+                    <label for="affiliation_or_title" id="affiliation-label">Affiliation or title (optional)</label>
                     <input type="text" id="affiliation_or_title" name="affiliation_or_title">
-                    <div class="form-help">
+                    <div class="form-help" id="affiliation-help">
                         Examples: University Librarian, Digital Preservation Specialist, Government Documents Archivist
                     </div>
                 </div>
@@ -507,11 +507,6 @@
                     <div class="form-group">
                         <label for="organization_name">Organization name</label>
                         <input type="text" id="organization_name" name="organization_name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="title_or_role">Your title or role</label>
-                        <input type="text" id="title_or_role" name="title_or_role">
                     </div>
 
                     <div class="form-group checkbox-group">
@@ -566,9 +561,10 @@
         const signingAs = document.getElementById('signing_as');
         const nameField = document.getElementById('name');
         const affiliationField = document.getElementById('affiliation_or_title');
+        const affiliationLabel = document.getElementById('affiliation-label');
+        const affiliationHelp = document.getElementById('affiliation-help');
         const orgFields = document.getElementById('organization-fields');
         const orgName = document.getElementById('organization_name');
-        const orgRole = document.getElementById('title_or_role');
         const orgAuthorized = document.getElementById('org_authorized');
         const publicDisplayName = document.getElementById('public_display_name');
 
@@ -603,17 +599,17 @@
 
             orgFields.hidden = !isOrg;
             orgName.required = isOrg;
-            orgRole.required = isOrg;
             orgAuthorized.required = isOrg;
 
-            const affiliationGroup = document.getElementById('individual-affiliation');
-            affiliationGroup.hidden = isOrg;
-
             if (isOrg) {
-                affiliationField.value = '';
+                affiliationLabel.textContent = 'Your title or role';
+                affiliationHelp.textContent = 'Examples: Executive Director, Program Manager, President';
+                affiliationField.required = true;
             } else {
+                affiliationLabel.textContent = 'Affiliation or title (optional)';
+                affiliationHelp.textContent = 'Examples: University Librarian, Digital Preservation Specialist, Government Documents Archivist';
+                affiliationField.required = false;
                 orgName.value = '';
-                orgRole.value = '';
                 orgAuthorized.checked = false;
             }
 
