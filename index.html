@@ -588,9 +588,14 @@
             return name;
         }
 
+        let userEditedDisplayName = false;
+
         function updatePublicDisplayPlaceholder() {
             const suggestion = suggestedDisplayName();
             publicDisplayName.placeholder = suggestion || 'How should this appear publicly?';
+            if (!userEditedDisplayName) {
+                publicDisplayName.value = suggestion;
+            }
         }
 
         function updateFormMode() {
@@ -616,6 +621,9 @@
         nameField.addEventListener('input', updatePublicDisplayPlaceholder);
         affiliationField.addEventListener('input', updatePublicDisplayPlaceholder);
         orgName.addEventListener('input', updatePublicDisplayPlaceholder);
+        publicDisplayName.addEventListener('input', function() {
+            userEditedDisplayName = true;
+        });
 
         updateFormMode();
 
@@ -637,6 +645,7 @@
                 if (result.success) {
                     successEl.classList.add('visible');
                     form.reset();
+                    userEditedDisplayName = false;
                     updateFormMode();
                 } else {
                     errorEl.classList.add('visible');
