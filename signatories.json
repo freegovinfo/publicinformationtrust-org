@@ -34,5 +34,7 @@
   { "type": "individual", "name": "Carla Graebner" },
   { "type": "individual", "name": "Antoine McGrath" },
   { "type": "individual", "name": "Sarah Burchart" },
-  { "type": "individual", "name": "Merrilee Proffitt" }
+  { "type": "individual", "name": "Merrilee Proffitt" },
+  { "type": "individual", "name": "Robert Gradeck", "affiliation": "Project Director, Wsetern Pennsylvania Regional Data Center" },
+  { "type": "individual", "name": "Eleanor Mattern" }
 ]
