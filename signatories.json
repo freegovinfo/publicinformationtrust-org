@@ -36,5 +36,7 @@
   { "type": "individual", "name": "Sarah Burchart" },
   { "type": "individual", "name": "Merrilee Proffitt" },
   { "type": "individual", "name": "Robert Gradeck", "affiliation": "Project Director, Western Pennsylvania Regional Data Center" },
-  { "type": "individual", "name": "Eleanor Mattern" }
+  { "type": "individual", "name": "Eleanor Mattern" },
+  { "type": "individual", "name": "Jill Strykowski", "affiliation": "San Jose State University" },
+  { "type": "individual", "name": "Jenny McBurney", "affiliation": "University of Minnesota" }
 ]
