@@ -15,7 +15,7 @@
   { "type": "individual", "name": "Sanga Sung" },
   { "type": "individual", "name": "William Neumaier" },
   { "type": "individual", "name": "Mel DeSart" },
-  { "type": "individual", "name": "Ron Nakao" },
+  { "type": "individual", "name": "Ron Nakao", "affiliation": "Data librarian" },
   { "type": "individual", "name": "Bernadine Abbott Hoduski" },
   { "type": "individual", "name": "Lynda Kellam" },
   { "type": "individual", "name": "Steve Beleu" },
