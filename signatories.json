@@ -42,6 +42,8 @@
   { "type": "individual", "name": "Allison Ownby", "affiliation": "Nonprofit Center of Northeast Florida" },
   { "type": "individual", "name": "Lacie Lambert" },
   { "type": "individual", "name": "Jennifer Vaughn" },
-  { "type": "individual", "name": "Laura Palumbo", "affiliation": "Science librarian" }
+  { "type": "individual", "name": "Laura Palumbo", "affiliation": "Science librarian" },
+  { "type": "organization", "name": "Tracking Gov Info (TGI)", "affiliation": "Molly Blake, co-founder" }
+
   
 ]
