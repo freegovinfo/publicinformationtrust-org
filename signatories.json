@@ -43,7 +43,9 @@
   { "type": "individual", "name": "Lacie Lambert" },
   { "type": "individual", "name": "Jennifer Vaughn" },
   { "type": "individual", "name": "Laura Palumbo", "affiliation": "Science librarian" },
-  { "type": "organization", "name": "Tracking Gov Info (TGI)" }
+  { "type": "organization", "name": "Tracking Gov Info (TGI)", "affiliation": "Molly Blake, co-founder" }
+  
+ }
 
   
 ]
