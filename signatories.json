@@ -43,7 +43,16 @@
   { "type": "individual", "name": "Lacie Lambert" },
   { "type": "individual", "name": "Jennifer Vaughn" },
   { "type": "individual", "name": "Laura Palumbo", "affiliation": "Science librarian" },
-  { "type": "organization", "name": "Tracking Gov Info (TGI)", "affiliation": "Molly Blake, co-founder" }
+  { "type": "organization", "name": "Tracking Gov Info (TGI)", "affiliation": "Molly Blake, co-founder" },
+  { "type": "organization", "name": "IASSIST", "affiliation": "Bobray Bordelon, President" },
+  { "type": "organization", "name": "DataHoarding.org" },
+  { "type": "individual", "name": "Hannah Frost" },
+  { "type": "individual", "name": "Ellen Gilbert" },
+  { "type": "individual", "name": "Katy Jones Garrity", "affiliation": "Archival Producer" },
+  { "type": "individual", "name": "Margo Schlanger", "affiliation": "Director, Civil Rights Litigation Clearinghouse; Professor of Law, University of Michigan" },
+  { "type": "individual", "name": "Fred Rowland", "affiliation": "Temple University, Librarian" },
+  { "type": "individual", "name": "Katherine Veeninga, MLIS" },
+  { "type": "individual", "name": "Edward F. Nazarko" }
   
  }
 
