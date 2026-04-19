@@ -59,5 +59,6 @@
   { "type": "individual", "name": "Fred Turner", "affiliation": "Harry and Norman Chandler Professor of Communication, Stanford University" },
   { "type": "individual", "name": "Kris Chebul" },
   { "type": "individual", "name": "Shari Laster" },
-  { "type": "individual", "name": "Jeremy Darrington" }
+  { "type": "individual", "name": "Jeremy Darrington" },
+  { "type": "individual", "name": "Daniel Schuman", "affiliation": "Executive Director, American Governance Institute" }
 ]
