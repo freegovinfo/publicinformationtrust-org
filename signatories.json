@@ -8,8 +8,9 @@
   { "type": "organization", "name": "Tracking Gov Info (TGI)", "affiliation": "Molly Blake, co-founder" },
   { "type": "organization", "name": "IASSIST", "affiliation": "Bobray Bordelon, President" },
   { "type": "organization", "name": "DataHoarding.org" },
-  { "type": "organization", "name": "Internet Archive" },
-  { "type": "individual", "name": "James R. Jacobs", "affiliation": "Free Government Information (FGI)", "date": "2026-03-12" },
+  { "type": "organization", "name": "Internet Archive", "affiliation": "Brewster Kahle, Digital Librarian" },
+  { "type": "organization", "name": "Environmental Data and Governance Initiative (EDGI)" },
+  { "type": "individual", "name": "James R. Jacobs", "affiliation": "US Government Information Librarian, Stanford University", "date": "2026-03-12" },
   { "type": "individual", "name": "Jim Jacobs", "affiliation": "Free Government Information (FGI)", "date": "2026-03-12" },
   { "type": "individual", "name": "ShinJoung Yeo", "affiliation": "Information Observatory" },
   { "type": "individual", "name": "Christopher Steven Marcum", "affiliation": "Open Science Advocate" },
@@ -39,7 +40,7 @@
   { "type": "individual", "name": "Carla Graebner" },
   { "type": "individual", "name": "Antoine McGrath" },
   { "type": "individual", "name": "Sarah Burchart" },
-  { "type": "individual", "name": "Merrilee Proffitt" },
+  { "type": "individual", "name": "Merrilee Proffitt", "affiliation": "Director, Democracy's Library US, Internet Archive" },
   { "type": "individual", "name": "Robert Gradeck", "affiliation": "Project Director, Western Pennsylvania Regional Data Center" },
   { "type": "individual", "name": "Eleanor Mattern" },
   { "type": "individual", "name": "Jill Strykowski", "affiliation": "San Jose State University" },
@@ -66,5 +67,6 @@
   { "type": "individual", "name": "E Farley" },
   { "type": "individual", "name": "Kimber M Quinney", "affiliation": "Associate Professor of History" },
   { "type": "individual", "name": "John Josef Kloninger" }
+  
 
 ]
