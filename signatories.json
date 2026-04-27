@@ -10,6 +10,7 @@
   { "type": "organization", "name": "DataHoarding.org" },
   { "type": "organization", "name": "Internet Archive", "affiliation": "Brewster Kahle, Digital Librarian" },
   { "type": "organization", "name": "Environmental Data and Governance Initiative (EDGI)" },
+  { "type": "organization", "name": "Internet Archive Canada", "affiliation": "Andrea Mills, Executive Director" },
   { "type": "individual", "name": "James R. Jacobs", "affiliation": "US Government Information Librarian, Stanford University", "date": "2026-03-12" },
   { "type": "individual", "name": "Jim Jacobs", "affiliation": "Free Government Information (FGI)", "date": "2026-03-12" },
   { "type": "individual", "name": "ShinJoung Yeo", "affiliation": "Information Observatory" },
