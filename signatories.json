@@ -11,6 +11,7 @@
   { "type": "organization", "name": "Internet Archive", "affiliation": "Brewster Kahle, Digital Librarian" },
   { "type": "organization", "name": "Environmental Data and Governance Initiative (EDGI)" },
   { "type": "organization", "name": "Internet Archive Canada", "affiliation": "Andrea Mills, Executive Director" },
+  { "type": "organization", "name": "Mid-Hudson Library System", "affiliation": "Rebekkah Smith Aldrich, Executive Director" },
   { "type": "individual", "name": "James R. Jacobs", "affiliation": "US Government Information Librarian, Stanford University" },
   { "type": "individual", "name": "Jim Jacobs", "affiliation": "Data Librarian Emeritus, USCD" },
   { "type": "individual", "name": "ShinJoung Yeo", "affiliation": "Information Observatory" },
@@ -80,5 +81,6 @@
   { "type": "individual", "name": "Rhonda Lea Fries", "affiliation": "Grandmother" },
   { "type": "individual", "name": "LeeAnna Keith", "affiliation": "Historian" },
   { "type": "individual", "name": "Mary Edwards", "affiliation": "Retired Librarian" },
-  { "type": "individual", "name": "Kim Danboise" }
+  { "type": "individual", "name": "Kim Danboise" },
+  { "type": "individual", "name": "Michael Saccardi", "affiliation": "Father" }
 ]
