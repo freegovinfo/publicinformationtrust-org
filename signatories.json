@@ -86,5 +86,10 @@
   { "type": "individual", "name": "Molly Hardy" },
   { "type": "individual", "name": "Charles Coleman" },
   { "type": "individual", "name": "Lukas K Chan" },
-  { "type": "individual", "name": "Kathleen Sullivan" }
+  { "type": "individual", "name": "Kathleen Sullivan" },
+  { "type": "individual", "name": "Tom Rohrig" },
+  { "type": "individual", "name": "Gwen Sinclair", "affiliation": "Chair, Government Documents & Maps Department, University of Hawai‘i at Mānoa Library" },
+  { "type": "individual", "name": "Sara Westdal" },
+  { "type": "individual", "name": "Natasha Finnegan", "affiliation": "Salisbury University Librarian" },
+  { "type": "individual", "name": "Robbie Sittel", "affiliation": "Librarian" }
 ]
