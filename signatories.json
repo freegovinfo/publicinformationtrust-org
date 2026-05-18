@@ -98,5 +98,6 @@
   { "type": "individual", "name": "Andrew Mullins", "affiliation": "Digital Archivist" },
   { "type": "individual", "name": "Amy DeNisco", "affiliation": "City Archivist" },
   { "type": "individual", "name": "Halle Burns" },
-  { "type": "individual", "name": "Annelise Sklar" }
+  { "type": "individual", "name": "Annelise Sklar" },
+  { "type": "individual", "name": "Kathryn Lage", "affiliation": "Librarian" }
 ]
