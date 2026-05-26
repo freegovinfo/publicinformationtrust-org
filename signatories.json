@@ -99,5 +99,7 @@
   { "type": "individual", "name": "Amy DeNisco", "affiliation": "City Archivist" },
   { "type": "individual", "name": "Halle Burns" },
   { "type": "individual", "name": "Annelise Sklar" },
-  { "type": "individual", "name": "Kathryn Lage", "affiliation": "Librarian" }
+  { "type": "individual", "name": "Kathryn Lage", "affiliation": "Librarian" },
+  { "type": "individual", "name": "Kevin Lambert" },
+  { "type": "individual", "name": "Kameron Kerger" }
 ]
