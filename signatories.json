@@ -111,5 +111,8 @@
   { "type": "individual", "name": "Henry Zheng" },
   { "type": "individual", "name": "Isaiah Ramos", "affiliation": "Data Analyst/Developer" },
   { "type": "individual", "name": "Jose Rincon", "affiliation": "Business Librarian" },
-  { "type": "individual", "name": "Deborah Yun Caldwell", "affiliation": "Librarian" }
+  { "type": "individual", "name": "Deborah Yun Caldwell", "affiliation": "Librarian" },
+  { "type": "individual", "name": "Brian R. Huffman" },
+  { "type": "individual", "name": "Teresa Sakurada" },
+  { "type": "individual", "name": "Michiko Joseph" }
 ]
