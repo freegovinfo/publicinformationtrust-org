@@ -116,5 +116,6 @@
   { "type": "individual", "name": "Teresa Sakurada" },
   { "type": "individual", "name": "Michiko Joseph" },
   { "type": "individual", "name": "Erin Cleary-Parr" },
-  { "type": "individual", "name": "Malia Van Heukelem", "affiliation": "Archivist Librarian" }
+  { "type": "individual", "name": "Malia Van Heukelem", "affiliation": "Archivist Librarian" },
+  { "type": "individual", "name": "Violet Harada" }
 ]
