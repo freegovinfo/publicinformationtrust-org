@@ -122,5 +122,6 @@
   { "type": "individual", "name": "Sunyeen Pai" },
   { "type": "individual", "name": "Jim Church" },
   { "type": "individual", "name": "Jesse Silva" },
-  { "type": "individual", "name": "Sabrina Thomas", "affiliation": "Director" }
+  { "type": "individual", "name": "Sabrina Thomas", "affiliation": "Director" },
+  { "type": "individual", "name": "Linda Wagner", "affiliation": "Librarian" }
 ]
