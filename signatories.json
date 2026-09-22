@@ -129,5 +129,8 @@
   { "type": "individual", "name": "Arlene Weible", "affiliation": "Librarian" },
   { "type": "individual", "name": "Whitney Kehl Chamberlain" },
   { "type": "individual", "name": "Aimee Quinn", "affiliation": "Librarian" },
-  { "type": "individual", "name": "Arlene Fialkoff", "affiliation": "Technical Information Specialist" }
+  { "type": "individual", "name": "Arlene Fialkoff", "affiliation": "Technical Information Specialist" },
+  { "type": "individual", "name": "Erika Westhoff" },
+  { "type": "individual", "name": "Katherine Braman", "affiliation": "Government Documents Librarian" },
+  { "type": "individual", "name": "Christina Hanson", "affiliation": "Public librarian" }
 ]
